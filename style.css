@@ -1,0 +1,111 @@
+*{
+   margin:0%;
+   padding:0%;
+   box-sizing: border-box;
+}
+
+html,body{
+   height:100%;
+   width:100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(#3b77d0, #9198e5);
+}   
+.main{
+
+    position: relative;
+}
+
+.clock{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;  
+    border-radius: 50%; 
+    color: #fff;
+    font-family: cursive;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(212, 192, 192, 0.1);
+
+}
+
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg*var(--n)));
+    inset: 8px;
+    text-align: center;
+
+}
+
+.clock span b{
+
+    transform: rotate(calc(-30deg*var(--n)));
+    display: inline-block;
+
+}
+
+.clock::after{
+
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fc0000;
+    border-radius: 50%;
+
+}
+.ticker{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#tickerH i {
+  
+    position: absolute;
+    background-color: #e88412;
+    width: 8px;
+    height: 55px;
+    border-radius: 22px;
+
+}
+#tickerM i {
+  
+    position: absolute;
+    background-color: #b0ec50;
+    width: 5px;
+    height: 65px;
+    border-radius: 22px;
+
+}
+#tickerS i {
+  
+    position: absolute;
+    background-color:  #2de1a8;
+    width: 4px;
+    height: 68px; 
+    border-radius: 20px;
+
+}
+#twelve{
+    color:#000000; 
+    font-size: xx-large;
+}
+#six{
+
+    color:  #000000;
+    font-size: xx-large;
+}
+#nine{
+    color: #000000;
+    font-size: xx-large;
+}
+
+#three{
+    color: #000000;
+    font-size: xx-large;
+}
